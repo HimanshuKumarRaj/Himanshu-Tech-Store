@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Himanshu Tech Store</title>
+
+<!-- YOUR-KEY-HERE -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0f172a;
+    padding:20px 8%;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:white;
+}
+
+.hero h1{
+    font-size:40px;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#555;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    padding:40px 8%;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    text-align:center;
+    transition:0.3s;
+    padding-bottom:20px;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0 10px;
+}
+
+.price{
+    color:#2563eb;
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+@media(max-width:900px){
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Himanshu Tech Store</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Latest Gadgets Collection</h1>
+    <p>Discover premium products at amazing prices.</p>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Headphone">
+        <h3>Wireless Headphone</h3>
+        <p class="price">₹2,999</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500" alt="Watch">
+        <h3>Smart Watch</h3>
+        <p class="price">₹3,499</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=500" alt="Keyboard">
+        <h3>Gaming Keyboard</h3>
+        <p class="price">₹1,999</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500" alt="Mouse">
+        <h3>Gaming Mouse</h3>
+        <p class="price">₹999</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1589003077984-894e133dabab?w=500" alt="Speaker">
+        <h3>Bluetooth Speaker</h3>
+        <p class="price">₹2,499</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=500" alt="Laptop Stand">
+        <h3>Laptop Stand</h3>
+        <p class="price">₹1,299</p>
+        <button>Buy Now</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Himanshu Tech Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
